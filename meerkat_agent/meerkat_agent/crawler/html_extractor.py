@@ -1,0 +1,74 @@
+#-*- coding: utf-8 -*-
+'''
+Created on 2014. 6. 21.
+
+@author: lsh
+'''
+
+import re
+import urllib2
+import urlparse
+from goose import Goose
+from goose.text import StopWordsKorean
+
+class HtmlExtractor(object):
+    '''
+    classdocs
+    '''
+    #추출을 수행할 html코드
+    _target_html_code = None
+    _target_url = None
+
+    def __init__(self, url):
+        '''
+        Constructor
+        '''
+
+        try:
+            response_from_url = urllib2.urlopen(url, timeout=1)
+        except:
+            raise
+        
+        try:
+            self._target_html_code = response_from_url.read()
+        except:
+            raise
+        
+        self._target_url = urlparse.urlparse(url)
+    
+    def extract_title(self):
+        '''
+        extract content in title tag from attribute _target_html_code
+        '''
+        
+        start_position = self._target_html_code.find('<title>')
+        
+        if start_position != -1:
+            endPos = self._target_html_code.find('</title>', start_position+7)
+            if endPos != -1:
+                title = self._target_html_code[start_position+7:endPos]
+        
+        return title
+                
+    def extract_main_text(self):
+        '''
+        extract main text from attribute _target_html_code
+        '''
+
+        gooseExtractor = Goose({'stopwords_class':StopWordsKorean, 'parser_class':'lxml',
+                                     'enable_image_fetching' : False})
+        
+        url = self._target_url.geturl()
+        
+        main_text = gooseExtractor.extract(url).cleaned_text.encode('utf8')
+
+        return main_text  
+                
+                
+                
+                
+                
+                
+                
+        
+        

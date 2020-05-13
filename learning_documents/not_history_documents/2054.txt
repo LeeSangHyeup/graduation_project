@@ -1,0 +1,1 @@
+ASPLOS(The International Conference on Architectural Support for Programming Languages and Operating Systems)는 ACM(계산기 학회)의 SIGARCH(50%), SIGPLAN(25%), SIGOPS(25%)의 주최로 구성된컴퓨터 구조및운영 체제분야의 선도 학술 대회로 인정받고 있다.

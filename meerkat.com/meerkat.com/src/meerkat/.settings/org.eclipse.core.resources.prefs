@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//common/views.py=utf-8
+encoding//crawler/crawler.py=utf-8
+encoding//crawler/morpheme.py=utf-8
+encoding//crawler/suitabilityChecker.py=utf-8
+encoding//crawler/views.py=utf-8
+encoding//knowledge/subFunction.py=utf-8
+encoding//knowledge/views.py=utf-8
+encoding//meerkat/settings.py=utf-8
+encoding//meerkat/urls.py=utf-8

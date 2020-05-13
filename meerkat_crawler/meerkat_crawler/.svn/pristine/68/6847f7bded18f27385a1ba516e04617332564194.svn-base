@@ -1,0 +1,23 @@
+###config file for meerkat agent
+
+#수집할 문서의 분야
+CATEGORY='국사'
+
+#문서수집시에 사용할 프로세스의 개수
+CRAWLER_PROCESS_QUANTITY=4
+
+#url서버에 후보 url을 요청할 때, 한번 요청시의 url 개수
+URL_REQUEST_QUANTITY=500
+
+#url서버의 포트번호
+URL_SERVER_PORT=2222
+
+#url서버의 IP주소
+URL_SERVER_IP=localhost
+
+#document서버의 포트번호
+DOCUMENT_SERVER_PORT=2224
+
+#document서버의 IP주소
+DOCUMENT_SERVER_IP=localhost
+        

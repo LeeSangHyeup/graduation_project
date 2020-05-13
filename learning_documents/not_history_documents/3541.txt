@@ -1,0 +1,1 @@
+유지시(UGC,Uppsala General Catalogue)는북반구밤하늘에서 보이는 12,921개의은하들을 수록한 목록이다. 이 목록은적위-02°30' 이상,시지름1.0분초이상,겉보기 등급14.5 이상의 은하들을 다루고 있다.이 목록 내 대부분의 자료는팔로마 천문대천체 연구(POSS, Palomar Observatory Sky Survey)에서 가져왔고, 시지름이 1.0분초보다 작지만 겉보기 등급이 14.5보다 밝은 천체들은 '은하 및 은하단은하 목록'(CGCG, Catalogue of Galaxies and of Clusters of Galaxies)의 자료를 인용했다.

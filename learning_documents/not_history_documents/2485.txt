@@ -1,0 +1,1 @@
+맨먼스 미신(The Mythical Man-Month: Essays on Software Engineering)은소프트웨어 공학및프로젝트 관리에 관한 책이다.프레더릭 브룩스는 이 책에서 "지체되는 개발 프로젝트에 인력을 더하는 것은 개발을 늦출 뿐"이라 주장하였으며 이는브룩스의 법칙으로 불린다.

@@ -1,0 +1,1 @@
+VRTX(Versatile Real-Time Executive)는멘토 그래픽스사에서 만든 실시간 운영체제로, 극히 제약된 리소스를 가진 간단한 시스템을 위한VRTXoc(On-Chip)와 메모리 보호가 필요한 복잡한 시스템을 위한VRTXsa(Scalable Architecture) 두 종류의 커널을 가진다.

@@ -1,0 +1,1 @@
+EPIC 아키텍처(Explicity Parallel Instruction Computing)는 병렬 처리 기술을 통해 처리 능력을 향상하여 병목 현상을 줄이고 프로세서의 성능을 높이는 기술이다.[1]

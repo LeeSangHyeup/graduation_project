@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//morpheme_analyzer/morpheme_analyzer.py=utf-8
+encoding//suitability_checker/keyword_handler.py=utf-8
+encoding/config.py=utf-8
+encoding/html_extractor.py=utf-8

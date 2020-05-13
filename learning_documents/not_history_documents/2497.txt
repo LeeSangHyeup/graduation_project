@@ -1,0 +1,1 @@
+스트림 프로세싱(stream processing)은 제한된 형태의병렬 처리를 응용 프로그램들이 쉽게 이용할 수 있도록하는SIMD(single instruction, multiple data)와 관련이 있는컴퓨터 프로그래밍의 한 양식이다. 그런 응용 프로그램들은GPU또는FPGA(field programmable gate arrays) 상에 있는FPU들과 같은 다수의 연산기들을 명시적 할당, 동기화, 또는 유닛들 간의 통신을 관리하는 것 없이도 사용할 수 있다.

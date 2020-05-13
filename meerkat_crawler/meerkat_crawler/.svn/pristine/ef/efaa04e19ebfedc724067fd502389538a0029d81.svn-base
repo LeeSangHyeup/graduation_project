@@ -1,0 +1,77 @@
+'''
+Created on 2014. 8. 28.
+
+@author: lsh
+'''
+
+import re
+from numpy import array 
+from mdp.nodes import PCANode
+
+#meerkat_modules
+from morpheme_analyzer.morpheme_analyzer import MorphemeAnalyzer
+
+
+class MasterKeywordExtractor:
+
+    def __init__(self):
+        self._PASS_CORRELATION_SCORE = 0.5
+        
+    def extract_master_keyword(self, article):
+        assert article != None, 'article is invalid'
+        assert len(article) > 0, 'article is invalid'
+        
+        morpheme_list = MorphemeAnalyzer().analyze_morpheme(article)
+        morpheme_list = filter(lambda x:x.frequency > 1, morpheme_list)
+        
+        article_matrix = self._create_article_matrix(article, morpheme_list)
+        
+        pca = PCANode(svd=True)
+        pca.execute(article_matrix)
+
+        principal_component1 = []
+        for vector in pca.v:
+            principal_component1.append(abs(vector[0]))
+
+        master_keyword_index = principal_component1.index(max(principal_component1))
+        master_keyword = morpheme_list[master_keyword_index].morpheme
+        
+        return master_keyword
+        
+    def _create_article_matrix(self, article, morpheme_list):
+        tmp_sentences = re.split(r'[.!?]\s*', article)
+        sentence_list=[]
+        for sentence in tmp_sentences:
+            sentence = sentence.strip()
+            if (sentence=='') or (len(sentence)==0):
+                    continue
+        
+            vector_raw = self._create_vector_raw(sentence, morpheme_list)
+            not_zero_elements = filter(lambda x:x!=0, vector_raw)
+            if len(not_zero_elements) > 0:
+                sentence_list.append(vector_raw)
+                
+        article_matrix = array(sentence_list)
+        
+        return article_matrix
+        
+    def _create_vector_raw(self, sentence, morpheme_list):
+        morpheme_analyzer = MorphemeAnalyzer()
+        sentence_keywords = morpheme_analyzer.analyze_morpheme(sentence)
+    
+        sentence=[]
+        for keyword in morpheme_list:
+            match_keyword = filter(lambda x:x.morpheme==keyword.morpheme, sentence_keywords)
+            if len(match_keyword)==0:
+                sentence.append(float(0))
+            else:
+                sentence.append(float(match_keyword[0].frequency))
+        
+        return sentence
+    
+    
+    
+    
+    
+    
+    

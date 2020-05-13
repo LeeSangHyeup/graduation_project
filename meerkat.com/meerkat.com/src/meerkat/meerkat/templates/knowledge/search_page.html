@@ -1,0 +1,25 @@
+{% extends base %}
+{% block content %}
+<div class="col-md-2"></div>
+<article id="content" class="col-md-8">
+
+
+	{% for crawledKnowledgeDocument in crawledKnowledgeDocuments %}
+	<div>
+	<ul class="list-group">
+		
+		<li class="list-group-item">
+			<p class="lead"><a href="{{crawledKnowledgeDocument.url}}">{{crawledKnowledgeDocument.title}}</a></p>
+		</li>
+		
+		<li class="list-group-item">
+			<p>{{crawledKnowledgeDocument.content}}</p>
+		</li>
+	
+	</ul>
+	{% endfor %}
+
+
+</article>
+<div class="col-md-2"></div>
+{% endblock %}

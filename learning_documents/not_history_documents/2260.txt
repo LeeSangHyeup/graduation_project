@@ -1,0 +1,1 @@
+COMSOL Script(컴솔 스크립트)는 과학적인 계산에 주로 사용되는프로그래밍 언어이다.COMSOL Script를 이용하여COMSOL Multiphysics이 제공하는 모델링 능력을 모두 이용할 수 있다. 데이터 분석을 위한 600개 이상의 고차원 명령과 시각화 기능을 제공한다. 명령형식이MATLAB과 유사하다.COMSOL Script를 기반으로한 Reaction Engineering Lab, Optimization Lab, Signal&amp;System Lab 등의 확장 모듈이 있다.

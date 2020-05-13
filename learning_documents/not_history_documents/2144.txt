@@ -1,0 +1,1 @@
+프로그램 지정 정보(PSI - Program specific information)는MPEG-2표준에 정의된메타데이터이다.PSI 데이터는 다음과 같은 4 개의 표(table)를 포함한다:

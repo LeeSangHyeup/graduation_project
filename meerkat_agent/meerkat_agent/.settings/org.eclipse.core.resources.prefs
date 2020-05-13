@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+encoding//crawler/crawler.py=utf-8
+encoding//crawler/html_extractor.py=utf-8
+encoding//entry_point/main.py=utf-8
+encoding//inside_document_collecter/inside_document_collecter.py=utf-8
+encoding//temporary_data_management/keyword_management.py=utf-8
+encoding/config.py=utf-8

@@ -1,0 +1,25 @@
+'''
+Created on 2014. 8. 27.
+
+@author: lsh
+'''
+
+import logging
+
+#meerkat modules
+from crawler import Crawler
+
+if __name__ == '__main__':
+    crawler = Crawler()
+    
+    logging.basicConfig(
+        filename='./log/log.log',filemode='a', level=logging.DEBUG, format='[%(asctime)s][%(levelname)s] %(message)s')
+     
+    logging.info(" Server Start..")
+    
+    print 'crawler activated'
+    
+    try:
+        crawler.collect_document()
+    except:
+        logging.exception()

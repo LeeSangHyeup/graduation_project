@@ -1,0 +1,26 @@
+###config file for meerkat agent
+
+
+#수집할 문서의 분야
+CATEGORY='국사'
+
+#한 가지 지식에 대해 수집할 문서의 개수
+TARGET_DOCUMENT_QUANTITY=10
+
+#웹 검색 시 검색 페이지 개수 제한(한 가지 seed에 대해 수행할 검색의 페이지 개수)
+SEARCH_PAGE_LIMIT=1000
+
+#웹 검색 시에 가동할 프로세스 개수를 결정하는 값(프로세스 개수 = cpu코어개수 * CRAWLER_PROCESS_WEIGHTVALUE)
+CRAWLER_PROCESS_WEIGHTVALUE=4
+
+#db서버 접속정보
+DBMS_NAME='postgresql'
+DB_HOST='61.80.2.117'
+DB_PORT='5432'
+DB_NAME='meerkat'
+DB_USER='postgres'
+DB_PASSWORD='00000NUL(null)'
+
+#한국어 형태소분석기의 경로
+KLT_ANALYZER_PATH='/external_modules/KLT2010-TestVersion/EXE/'
+        

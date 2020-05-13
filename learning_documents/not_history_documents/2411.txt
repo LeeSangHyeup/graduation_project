@@ -1,0 +1,1 @@
+플랜 9(Plan 9 from Bell Labs )은 벨 연구소의 Computing Sciences Research Center에서 1980년대 중반부터 2002년까지유닉스연구의 후속 개발된 분산운영 체제이다. Glendix와 같은 프로젝트는 GNU 소프트웨어를리눅스로부터 분리하여 플랜9에 포팅하고 있다.

@@ -1,0 +1,1 @@
+국제 컴퓨터 비전 학회(International Conference on Computer Vision)는 격년제로 개최되는 학회로서 컴퓨터과학 분야 최고 수준의 학회중 하나이며 컴퓨터시신경(컴퓨터 비전) 및인공지능-패턴인식분야에 있어CVPR(Conference on Computer Vision and Pattern Recognition)과 함께 최고권위의 학회이다.[1]IEEE(전기 전자 기술자 협회)가 주최하는 학회로 회당 약 1200편의 논문이 투고되어 채택율은 약 20% 정도이며 구술발표에는 4% 정도가 초청된다.[2]본 학술발표는 4일간 진행되며 전후로 2일씩 4일간 초청강연, 워크샵, 테마학습 등이 프로그램이 진행된다.

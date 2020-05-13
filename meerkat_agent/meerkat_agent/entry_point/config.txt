@@ -1,0 +1,24 @@
+###config file for meerkat agent
+
+
+#수집할 문서의 분야
+CATEGORY='국사'
+
+#웹 검색 시에 가동할 프로세스 개수를 결정하는 값(프로세스 개수 = cpu코어개수 * CRAWLER_PROCESS_WEIGHTVALUE)
+CRAWLER_PROCESS_WEIGHTVALUE=4
+
+#url서버 접속정보
+URL_SERVER_HOST='localhost'
+URL_SERVER_PORT='2222'
+
+#db서버 접속정보
+DBMS_NAME='postgresql'
+DB_HOST='192.168.0.4'
+DB_PORT='5432'
+DB_NAME='meerkat'
+DB_USER='postgres'
+DB_PASSWORD='00000NUL(null)'
+
+#한국어 형태소분석기의 경로
+KLT_ANALYZER_PATH='/external_modules/KLT2010-TestVersion/EXE/'
+        
